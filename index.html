@@ -1,45 +1,90 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <script src="cytoscape.min.js"></script>
-    <title>->Algorithm Animation</title>
-    <h1>->BFS and DFS Animation:</h1>
-    <body>
-        <div class="contain">
-    -> Enter Start Vertex Here:
-    <input type="text" name="v" id="v">
-    <button onclick="bfs()">Generate BFS</button>
-    <button onclick="dfs()">Generate DFS</button>
-    <br>
-    <button value="Refresh Page" onClick="window.location.reload();">Reload</button>
-<br>
-<h3>-> Make a custom graph:</h3>
-<h5>No of nodes:</h5>
-<input type="text" name="node-no" id="node-no">
-<button onclick="addNodes()">Generate Nodes</button>
-<h4>-> Enter edges(source,destination,weight)</h4>
-<h5>Source:</h5>
-<input type="text" name="source" id="source">
-<h5>Destination:</h5>
-<input type="text" name="destination" id="destination">
-<br>
-<h5>Weight:</h5>
-<input type="text" name="weight" id="weight">
-<br>
-<br>
+<!doctype html>
+<html lang="en">
 
-<button onclick="Generate()">Generate Edges</button>
-<br>
-<br>
-<br>
-<h2>-> Minimum spanning tree:</h2>
-<button onclick="runmstx()">Generate MST</button>
-<button value="Refresh Page" onClick="window.location.reload();">Reload</button>
-<br>
-</div>
-        <div id="cy"></div>
-        <script src="code.js"></script>
-        </body>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Algorithm Animation</title>
+    <script src="cytoscape.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <h1>BFS and DFS Animation:</h1>
+        <div class="container-fluid">
+            <h3>
+                <ul>
+                    <li>Random Graph</li>
+                </ul>
+            </h3>
+            <input type="text" placeholder='Enter Start Vertex Here' name="v" id="v">
+            <br>
+            <button onclick="bfs()">Generate BFS</button>
+            <br>
+            <button onclick="dfs()">Generate DFS</button>
+            <br>
+            <button value="Refresh Page" onClick="window.location.reload();">Reload</button>
+            <br>
+            <br>
+        </div>
+        <div class="container-fluid">
+            <h3>
+                <ul>
+                    <li>Make a custom graph:</li>
+                </ul>
+            </h3>
+            <input type="text" placeholder='No of nodes:' name="node-no" id="node-no"><br>
+            <button onclick="addNodes()">Generate Nodes</button>
+            <br>
+            <br>
+            <h4>
+                <ul>
+                    <li>Enter edges(source,destination,weight)</li>
+
+                </ul>
+            </h4>
+            <input type="text" name="source" placeholder='Source' id="source"><br>
+            <input type="text" name="destination" placeholder='Destination' id="destination"><br>
+            <input type="text" name="weight" placeholder='Weight' id="weight">
+            <br>
+            <button onclick="Generate()">Generate Edges</button>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <h3>
+                <ul>
+                    <li>Minimum spanning tree:</li>
+
+                </ul>
+            </h3>
+            <button onclick="runmstx()">Generate MST</button>
+            <button value="Refresh Page" onClick="window.location.reload();">Reload</button>
+            <br>
+        </div>
+    </div>
+    <div class='container' id="cy"></div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    </div>
+    <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
 </html>

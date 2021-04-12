@@ -1,26 +1,14 @@
-body { 
-    font: 14px helvetica neue, helvetica, arial, sans-serif;
-    background-color: rgb(241, 241, 233);
-  }
-  
-  #cy {
-    height: 90%;
-    width: 45%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-style: solid;
-    border-width: 5px 5px 5px 5px;
-  }
+body {
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+  background-color: rgb(241, 241, 233);
+}
 
-  .contain{
-    right:10;
-      height: 50%;
-      width: 60%;
-      top:0;
-      font-size: large;
-  }
-
-  button{
-    font-size: large;
-  }
+#cy {
+  height: 80%;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 5px;
+}
